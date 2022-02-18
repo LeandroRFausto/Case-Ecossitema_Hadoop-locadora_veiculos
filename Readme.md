@@ -55,7 +55,7 @@ Para criar a database no Hive:
     CREATE DATABASE locadora;
     USE locadora;
 
-Para fazer a ingestão para o Sqoop:
+Para fazer a ingestão para o Hive via Sqoop:
 
     sqoop import -connect jdbc:postgresql://127.0.0.1/locadora --username xxxx --password xxxx --table clientes --hive-import --create-hive-table --hive-table LOCADORA.CLIENTES;
 
